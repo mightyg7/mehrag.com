@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mehrag Faiz — Building AI consumer hardware. MSc Robotics at TU Delft.">
+    <title>Mehrag Faiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #141414;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+            min-height: 100vh;
+        }
+
+        /* Hero */
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            margin-top: 12px;
+            font-size: 1.05rem;
+            color: #555;
+        }
+
+        /* Now section */
+        .section {
+            margin-top: 56px;
+        }
+
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #999;
+            margin-bottom: 16px;
+        }
+
+        .now-text {
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* Work cards */
+        .work-grid {
+            display: grid;
+            gap: 1px;
+            background: #e8e8e8;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .work-card {
+            background: #fff;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            transition: background 0.2s;
+        }
+
+        .work-card:hover {
+            background: #fafafa;
+        }
+
+        .work-title {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .work-detail {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .work-meta {
+            font-size: 0.8rem;
+            color: #999;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            gap: 24px;
+            margin-top: 56px;
+        }
+
+        .links a {
+            color: #141414;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, opacity 0.2s;
+        }
+
+        .links a:hover {
+            border-bottom-color: #141414;
+            opacity: 0.7;
+        }
+
+        /* Greeting */
+        .greeting {
+            font-size: 0.85rem;
+            color: #bbb;
+            margin-bottom: 8px;
+        }
+
+        /* Glow */
+        .glow {
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(100, 140, 255, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        @media (pointer: coarse) {
+            .glow { display: none; }
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 80px 20px 60px;
+            }
+
+            h1 {
+                font-size: 1.65rem;
+            }
+
+            .tagline {
+                font-size: 0.95rem;
+            }
+
+            .section {
+                margin-top: 44px;
+            }
+
+            .work-card {
+                flex-direction: column;
+                gap: 4px;
+                padding: 16px 20px;
+            }
+
+            .links {
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <p class="greeting" id="greeting">Good afternoon.</p>
+        <h1>Mehrag Faiz</h1>
+        <p class="tagline">Building AI consumer hardware. MSc Robotics at TU Delft.</p>
+
+        <div class="section">
+            <p class="section-label">Now</p>
+            <p class="now-text">
+                Shipping Luminote, an AI-enabled hardware product. Pursuing a master's in Cognitive Robotics and Human-Machine Interaction. Mentoring 30+ students on e-commerce growth. Previously scaled a brand to multi-six-figure revenue across EU markets.
+            </p>
+        </div>
+
+        <div class="section">
+            <p class="section-label">Selected Work</p>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div>
+                        <div class="work-title">Luminote</div>
+                        <div class="work-detail">AI-enabled consumer hardware product</div>
+                    </div>
+                    <span class="work-meta">2024 &ndash; now</span>
+                </div>
+                <div class="work-card">
+                    <div>
+                        <div class="work-title">E-commerce Brand</div>
+                        <div class="work-detail">Multi-six-figure revenue across EU markets</div>
+                    </div>
+                    <span class="work-meta">2024</span>
+                </div>
+                <div class="work-card">
+                    <div>
+                        <div class="work-title">Emergence Delft</div>
+                        <div class="work-detail">EEG-driven water curtain &mdash; engineering meets neuroscience</div>
+                    </div>
+                    <span class="work-meta">2023</span>
+                </div>
+                <div class="work-card">
+                    <div>
+                        <div class="work-title">Snapchat Filters</div>
+                        <div class="work-detail">24 location filters &mdash; 17M+ uses, 950M+ views</div>
+                    </div>
+                    <span class="work-meta">Snap Inc.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="mailto:faiz.mehrag@gmail.com">Email</a>
+        </div>
+
+    </div>
+
+    <!-- soft glow that follows cursor -->
+    <div class="glow" id="glow"></div>
+    <script>
+        const glow = document.getElementById('glow');
+        let gx = 0, gy = 0, cx = 0, cy = 0;
+
+        document.addEventListener('mousemove', e => { gx = e.clientX; gy = e.clientY; });
+
+        (function animate() {
+            cx += (gx - cx) * 0.08;
+            cy += (gy - cy) * 0.08;
+            glow.style.left = cx + 'px';
+            glow.style.top = cy + 'px';
+            requestAnimationFrame(animate);
+        })();
+
+        // time-based greeting
+        const greetEl = document.getElementById('greeting');
+        const h = new Date().getHours();
+        const greetings = h < 6 ? 'Up late?' : h < 12 ? 'Good morning.' : h < 18 ? 'Good afternoon.' : 'Good evening.';
+        greetEl.textContent = greetings;
+    </script>
+</body>
+</html>
